@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tpn5 ej4</title>
+</head>
+<!-- En este ejercicio, deberás calcular el total de ingresos mensuales a partir de un arreglo que contenga los 
+ingresos diarios. Utiliza el método reduce para sumar todos los ingresos diarios y obtener el total mensual. -->
+
+<body>
+    <script>
+        let ingresosDiarios = [];
+        let datos=[10000, 15000, 17500, 20000, 25000]
+        let ingresos = ['$10.000', '$15.000','$17.500','$20.000', '$25.000'];
+        document.write(`Ingresos diarios: ${ingresos} <br> `)
+
+        for (let i = 0; i < datos.length; i++) {
+            ingresosDiarios.push(datos[i]);
+        }
+
+        let totalMensual = ingresosDiarios.reduce((acumulador, valor)=> acumulador + valor, 0);
+
+        document.write(`Total mensual $ ${totalMensual} `);
+
+    </script>
+
+</body>
+
+</html>

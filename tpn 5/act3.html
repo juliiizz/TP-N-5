@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tpn5 ej3</title>
+</head>
+<!-- Cargar la suma total de bolsas de manzanas por kg. -->
+
+<body>
+    <script>
+        let bolsas = [3.34568, 2.45678, 4.8765, 1.548, 3.78, 7.74];
+        document.write(`Lista de kg: ${bolsas} <br> `)
+
+        let sumaTotal = bolsas.reduce((acumulador, valor) => acumulador + valor, 0);
+        sumaTotal = sumaTotal.toFixed(2);
+        document.write(`La suma total de las bolsas de manzanas es: ${ sumaTotal } kg`);
+
+    </script>
+
+</body>
+
+</html>

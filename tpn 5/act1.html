@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tpn5 ej1</title>
+</head>
+<!-- Dado un arreglo de notas de un alumno, utiliza el método reduce para calcular la
+suma total de las notas y el promedio.-->
+
+<body>
+    <script>
+        var notas = [7.5, 8.5, 9.5, 6.5, 10];
+        document.write(`Arreglo de Notas: ${notas} <br>`)
+        
+        var sumaTotal = notas.reduce((acumulador, nota) => acumulador + nota, 0);
+        var promedio = sumaTotal / notas.length;
+
+        document.write(`Suma total: ${sumaTotal} <br>`)
+        document.write(`Promedio: ${promedio}`)
+
+    </script>
+
+</body>
+
+</html>

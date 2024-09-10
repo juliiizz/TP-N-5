@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tpn5 ej5</title>
+</head>
+<!-- En una estación de servicios se necesita llevar un registro diario de los litros de combustible que se ingresan en 
+el tanque de almacenamiento. Utiliza el método reduce y escribe un programa que calcule el total de combustible ingresado 
+durante una semana -->
+
+<body>
+    <script>
+        let litrosDiarios = [];
+        let datos = [1200, 2500, 1500, 2544, 2846, 3521];
+        document.write(`Litros de combustible: ${datos} <br> `)
+
+        let i = 0;
+        while (i < datos.length) {
+            litrosDiarios.push(datos[i]);
+            i++;
+        }
+        let totalLitros = litrosDiarios.reduce((acumulador, valorActual)=>acumulador + valorActual, 0);
+
+        totalRedondeado =totalLitros.toFixed(2);
+
+        document.write(`Total de litros ingresados en la semana: ${totalRedondeado} lts`)
+
+
+    </script>
+
+</body>
+
+</html>
